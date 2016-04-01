@@ -32,6 +32,6 @@ mongoose.connection.once('open', function() {
         app.use(route, controller(app, route));
     });
 
-    console.log('Listening on port *:8080');
-    app.listen(8080);
+    console.log('Listening on port *:5000');
+    app.listen(5000);
  });
