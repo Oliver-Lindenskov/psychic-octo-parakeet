@@ -1,0 +1,35 @@
+{
+  "name": "mean_app",
+  "version": "0.0.1",
+  "description": "my first socket.io app",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "express": "^4.13.3",
+    "lodash": "^3.10.1",
+    "method-override": "^2.3.5",
+    "mongoose": "^4.2.4",
+    "resourcejs": "^1.0.0"
+  },
+  "main": "app.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Oliver",
+  "license": "MIT",
+  "keywords": [
+    "FeedYourRelations",
+    "food"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Oliver-Lindenskov/psychic-octo-parakeet.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Oliver-Lindenskov/psychic-octo-parakeet/issues"
+  },
+  "homepage": "https://github.com/Oliver-Lindenskov/psychic-octo-parakeet#readme",
+  "engine": {
+	  "node": "4.1.1"
+  }
+}
