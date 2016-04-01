@@ -21,7 +21,7 @@ app.use(function(req, res, next) {
 });
 
 // Connect to MongoDB
-mongoose.connect('mongodb://127.0.0.1/swapp');
+mongoose.connect('mongodb://oliv3178:ksc82xjz@ds011820.mlab.com:11820/feedyourrelations');
 mongoose.connection.once('open', function() {
 
     app.models = require('./models/index');
