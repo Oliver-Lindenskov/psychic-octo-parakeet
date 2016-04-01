@@ -11,6 +11,7 @@ var app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 app.use(methodOverride('X-HTTP-Method-Override'));
+app.set('port', (process.env.PORT || 5000));
 
 // CORS Support
 app.use(function(req, res, next) {
@@ -32,6 +33,7 @@ mongoose.connection.once('open', function() {
         app.use(route, controller(app, route));
     });
 
-    console.log('Listening on port *:5000');
-    app.listen(5000);
+    app.listen(app.get('port'),function(){
+      console.log('listening on port *:' + app.get('port'));
+    });
  });
