@@ -22,7 +22,7 @@ var PostsSchema = new mongoose.Schema({
   		forEat: {type: Number , required: true},
   		forDine: {type: Number , required: true}
   	},	
-	bringAlong: {type: String , required: true}
+	bringAlong: {type: Number , required: true}
   }
 });
 
