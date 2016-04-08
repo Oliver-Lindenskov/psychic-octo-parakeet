@@ -13,11 +13,10 @@ var PostsSchema = new mongoose.Schema({
   dish: {type: String , required: true},
   guests: {
     forEat: {type: Number , required: true},
-    forDine: {type: String , required: true}
+    forDine: {type: Number , required: true}
   },
   tags: {type: Array , required: true},
   bringAlong: {type: Array , required: true},
-  total: {type: Number , required: true},
   filled: {
   	guests: {
   		forEat: {type: Number , required: true},
