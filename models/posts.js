@@ -2,28 +2,28 @@ var mongoose = require('mongoose');
 
 // Create the MovieSchema.
 var PostsSchema = new mongoose.Schema({
-  user_id: {type: String , required: true},
-  type: {type: String , required: true},
-  picture: {type: String , required: true},
-  about: {type: String , required: true},
-  upload: {type: String , required: true},
-  hosted: {type: String , required: true},
-  address: {type: String , required: true},
-  genre: {type: String , required: true},
-  dish: {type: String , required: true},
+  user_id: {type: String , required: false},
+  type: {type: String , required: false},
+  picture: {type: String , required: false},
+  about: {type: String , required: false},
+  upload: {type: String , required: false},
+  hosted: {type: String , required: false},
+  address: {type: String , required: false},
+  genre: {type: String , required: false},
+  dish: {type: String , required: false},
   guests: {
-    forEat: {type: Number , required: true},
-    forDine: {type: String , required: true}
+    forEat: {type: Number , required: false},
+    forDine: {type: String , required: false}
   },
-  tags: {type: Array , required: true},
-  bringAlong: {type: Array , required: true},
-  total: {type: Number , required: true},
+  tags: {type: Array , required: false},
+  bringAlong: {type: Array , required: false},
+  total: {type: Number , required: false},
   filled: {
   	guests: {
-  		forEat: {type: Number , required: true},
-  		forDine: {type: Number , required: true}
+  		forEat: {type: Number , required: false},
+  		forDine: {type: Number , required: false}
   	},	
-	  bringAlong: {type: String , required: true}
+	  bringAlong: {type: String , required: false}
   }
 });
 
