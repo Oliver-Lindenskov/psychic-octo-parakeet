@@ -19,10 +19,10 @@ var PostsSchema = new mongoose.Schema({
   bringAlong: {type: Array , required: true},
   filled: {
   	guests: {
-  		forEat: {type: Number , required: true},
-  		forDine: {type: Number , required: true}
+  		forEat: {type: Array , required: true},
+  		forDine: {type: Array , required: true}
   	},	
-	bringAlong: {type: Number , required: true}
+	bringAlong: {type: Array , required: true}
   }
 });
 
